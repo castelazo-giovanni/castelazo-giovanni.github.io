@@ -9,13 +9,35 @@ body {
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width: 90%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-header {}
-header h1 {}
-header img {}
-header .subheading {}
+header {
+    background-color: #09264A;
+    padding: 20px;
+    overflow: auto;
+}
+
+
+header h1 {
+    color: #F99820;
+    text-align: center;
+    
+}
+
+
+header img {
+    float:left;    
+}
+
+
+header .subheading {
+    color: #F99820;
+    text-align: center; 
+    font-size: 1.5em;
+    
+}
+
 
 nav {}
 nav button {}
@@ -30,4 +52,23 @@ main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
 
-footer {}
+footer {
+    background-color: #09264A;
+    color: #F99820;
+    text-align: center; 
+    font-size: .7rem;
+}
+
+.contact {
+    width: 100%;
+    margin: 0;
+    padding: .1em;
+    background-color: #2081F9;
+    color: #000000;
+}
+
+.footer-bar {
+  width: 100%;
+  padding: .1em;
+  background-color: #09264A;
+}
