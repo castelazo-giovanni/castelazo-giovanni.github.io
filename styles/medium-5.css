@@ -1,10 +1,15 @@
 @media only screen and (min-width: 37.5em) {
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+header button { display: none; }
     
-nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+nav button { 
+    display: none; 
+}  /* hamburger button does not need to be shown in the medium on up views */
     
-section.forecast { display: block}  /* show the 10-day forecast with the medium view and up */
+.forecast { 
+    display: block;
+}  /* show the 10-day forecast with the medium view and up */
     
 nav {
     background-color: #2081F9;
@@ -18,6 +23,7 @@ nav ul {
     margin: 0;
     padding: 0;
     width: auto;
+    display:flex;
 }
     
 
@@ -44,7 +50,7 @@ nav li a {
     
 
 nav li.active a {
-    color: #FFFFFF;
+    color: #000000;
 }
     
 

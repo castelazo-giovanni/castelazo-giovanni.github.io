@@ -14,11 +14,12 @@
 <body>
   <header>
       <img src="../../images/logo.png" width="200" height="200" alt="Your Weather | Because you want to know"> 
-		<h1>YOUR WEATHER</h1>
-		<div class="subheading"> Because you want to know </div>
+      <h1>YOUR WEATHER</h1>
+      <div class="subheading"> Because you want to know </div>
   </header>
 
   <nav>
+    <button onclick="openHamburger()" id="hamburgerButton">MENU &#9776;</button>
     <ul>
     	<li><a href="#">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
@@ -30,26 +31,29 @@
   </nav>
     
   <main>
-    <h2>Page Title</h2>
-		<figure>
-		</figure>
+    <figure>
+        <img src="../../images/city/FranklinCity1.jpg" alt="Franklin City Picture">
+    </figure>
+      
+    <h2>Franklin</h2>
 		
     <section class="weather-summary">
-      <h3>Weather Summary</h3>    
-      <div class="highlow">
-        <p>High:</p>  
-        <p>Low:</p>  
-      </div>
       <div class="current">
-        Sunny
-        <picture>
-            <img src="images/#" alt="">
-        </picture>
+            <picture>
+                <img src="../../images/icons/SunnyIcon.png" alt="Sunny Day">
+            </picture>
+            <div class="quickweather">
+            <p>SUNNY</p>
+            <div class="highlow">
+                <p>High: <strong>90&deg;F</strong></p>  
+                <p>Low: <strong>66&deg;F</strong></p>  
+            </div>
+            <div class="conditions">
+                <p>Precipitation:<strong>0&#37;</strong></p>  
+                <p>Wind Speed:<strong>5 mph SW</strong></p> 
+            </div> 
+            </div>
       </div>   
-      <div class="conditions">
-        <p>Precipitation:</p>  
-        <p>Wind Speed:</p>  
-      </div>           
     </section>
         
     <section class="forecast">
@@ -88,9 +92,11 @@
       
     <article>
       <h3>Franklin Breaks Record</h3>	
-      <img src="">
-      <p class="town-article">
-      </p>
+        
+        <p class="town-article">
+        <img src="../../images/city/FranklinCity2.jpg" alt="Franklin City Center" width="150px">
+        It is another beautiful week here in Franklin, and just in time for our annual Strawberry Festival.  Bring the family out to enjoy all the fun, games, and strawberries you can handle.  Stop by our town visitor center located at 222 Main Street, to receive some free game tickets.  We can't wait to see you there.
+        </p>
     </article>		  
   </main>
     

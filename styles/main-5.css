@@ -1,15 +1,18 @@
-/* Delete these CSS comments after reading. */
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* {
+    box-sizing: border-box;
+}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
   font-family: "Georgia", serif;  /* Declare the base font-family */
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 90%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+header, nav, main, footer { 
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 90%; 
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 header {
@@ -34,12 +37,11 @@ header img {
 header .subheading {
     color: #F99820;
     text-align: center; 
-    font-size: 1.5em;
-    
+    font-size: 1.5em;    
 }
 
 
-nav {}
+/*nav {}
 nav button {}
 nav ul {}
 nav ul li {}
@@ -47,10 +49,173 @@ nav ul li a {}
 nav ul li.active a {}
 nav ul li a:hover {}
 
+*/
+
+nav { background-color: #2081F9; }
+
+nav button {
+    background-color: #2081F9;
+    border: solid 2px #F99820;
+    padding: .3em;
+    margin:auto;
+    font-size: 3em;
+    color: #F99820;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+nav button:hover {
+    background-color: #BBBBBB;
+    color: #000000;
+}
+
+
+nav ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li {
+    float: none;
+    position: relative;
+}
+
+
+nav ul li a {}
+
+
+nav ul li a:hover {
+    background-color: #09264A;
+}
+
+
+nav ul li.active a {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+        
+
+h3 {
+    background-color: #BBBBBB;
+    color: #F99820;
+    text-shadow: 1px 1.2px #000000;
+    padding: 10px; 
+    text-align: center;
+}
+
+
+table {
+    border-collapse: collapse;
+        
+}
+
+
+thead {
+    background-color: #F99820;
+  
+}
+
+
+table, td, th {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
 main {}
-main h2 {}
+main h2 {
+    text-align: center;
+    color: #2081F9;
+    
+}
+
+
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+
+
+main figure img {
+    width: 96%;
+    height: 150px;
+    float: left;
+}
+
+
+.current {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+}
+
+
+.current img {
+    float: left;
+    width: 125px;    
+}
+
+
+section .quickweather {
+    width: 300px;
+}
+
+
+section .quickweather p {
+    text-align: center;
+    margin: auto;
+}
+
+section .highlow {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+section .highlow p {
+    text-align: center;
+    margin: auto;
+}
+
+
+section .conditions {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+section .conditions p { 
+    text-align: center;
+    margin: auto;
+}
+
+
+.forecast { 
+    display: none; 
+}
+
+
+article {
+    background-color: #BBBBBB;
+    padding-bottom: 20px;
+}
+
+
+article img {
+    float: right;
+}
+
+article .town-article{
+    padding-top: 5px; 
+    padding-bottom: 70px;
+    text-align: left;
+}
+
 
 footer {
     background-color: #09264A;
@@ -58,6 +223,7 @@ footer {
     text-align: center; 
     font-size: .7rem;
 }
+
 
 .contact {
     width: 100%;
@@ -67,8 +233,12 @@ footer {
     color: #000000;
 }
 
+
 .footer-bar {
   width: 100%;
   padding: .1em;
   background-color: #09264A;
 }
+
+
+
