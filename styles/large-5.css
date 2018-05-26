@@ -1,4 +1,19 @@
 @media only screen and (min-width: 64em) {
-    
   
-  }
+.current {
+    display: flex;
+    flex-flow: row;
+    justify-content:center;
+    text-align: center;
+    width: 100%;
+}
+  
+.forecast { 
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    text-align: center;
+    width: 100%; 
+}
+
+}
