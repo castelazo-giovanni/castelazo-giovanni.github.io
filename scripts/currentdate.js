@@ -1,4 +1,4 @@
-function date() {
+function showDate() {
     var d = new Date();
     var weekday = new Array(7);
     weekday[0] = "Sunday";
@@ -9,9 +9,9 @@ function date() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
 
-    var n = weekday[d.getDay()];
+    var thisDay = weekday[d.getDay()];
 
-    var month = new Array();
+    var month = new Array(12);
     month[0] = "January";
     month[1] = "February";
     month[2] = "March";
@@ -25,7 +25,8 @@ function date() {
     month[10] = "November";
     month[11] = "December";
 
-    var mm = month[d.getMonth()];
+    var thisMonth = month[d.getMonth()];
 
 
-    document.getElementById("currentdate").innerHTML = n;
+    document.getElementById("currentdate").innerHTML = thisDay + ", " + d.getDate() + " " + thisMonth + " " + d.getFullYear();
+}
