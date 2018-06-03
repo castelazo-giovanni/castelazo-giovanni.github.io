@@ -6,12 +6,12 @@
 
 body {
   font-size: 16px;
-  font-family: "Georgia", serif;  /* Declare the base font-family */
+  font-family: 'Merriweather', serif;  /* Declare the base font-family */
 }
 
 header, nav, main, footer { 
     /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 90%; 
+  max-width: 100%; 
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
@@ -69,6 +69,10 @@ nav button:hover {
     background-color: #BBBBBB;
     color: #000000;
 }
+
+
+
+
 
 
 nav ul {
@@ -134,12 +138,11 @@ main h2 {
 }
 
 
-main figure { margin: 0 0 .2rem 2%; width:96%; }
+main picture { margin: 0 0 .2rem 2%; width:100%; }
 
 
-main figure img {
-    width: 96%;
-    height: 150px;
+main picture img {
+    width: 100%;    
     float: left;
 }
 
