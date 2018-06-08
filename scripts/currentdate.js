@@ -1,4 +1,3 @@
-function showDate() {
     var d = new Date();
     var weekday = new Array(7);
     weekday[0] = "Sunday";
@@ -29,4 +28,3 @@ function showDate() {
 
 
     document.getElementById("currentdate").innerHTML = thisDay + ", " + d.getDate() + " " + thisMonth + " " + d.getFullYear();
-}
