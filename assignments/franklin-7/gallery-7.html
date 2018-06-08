@@ -15,7 +15,7 @@
 </script>
 </head>
     
-<body  >
+<body onload="showDate()">
   <header>
       <img src="../../images/logo.png" width="200" height="200" alt="Your Weather | Because you want to know"> 
       <h1>YOUR WEATHER</h1>
@@ -30,7 +30,7 @@
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
-    	<li><a href=""https://castelazo-giovanni.github.io/assignments/franklin-7/gallery-7.html"">Gallery</a></li>
+    	<li><a href="#">Gallery</a></li>
     </ul>		
   </nav>
     
@@ -51,13 +51,12 @@
             <div class="quickweather">
             <p>SUNNY</p>
             <div class="highlow">
-                <p>High: <span id="highTemp">90</span><strong>&deg;F</strong></p>  
-                <p>Low: <span id="lowTemp">66</span><strong>&deg;F</strong></p>  
+                <p>High: <strong>90&deg;F</strong></p>  
+                <p>Low: <strong>66&deg;F</strong></p>  
             </div>
             <div class="conditions">
                 <p>Precipitation:<strong>0&#37;</strong></p>  
-                <p>Wind Speed:<span id="windSpeed">5</span><strong> mph SW</strong></p> 
-                <p>Wind Chill: <div id="windChill"></div></p>
+                <p>Wind Speed:<strong>5 mph SW</strong></p> 
             </div> 
             </div>
       </div>   
@@ -123,6 +122,5 @@
 
   <script src="../../scripts/hamburgermenu.js"></script>
   <script src="../../scripts/currentdate.js"></script>
-  <script src="../../scripts/windchill.js"></script>
 </body>
 </html>
