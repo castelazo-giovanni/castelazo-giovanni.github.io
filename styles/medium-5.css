@@ -60,5 +60,10 @@ nav li a:hover {
     padding: 10px;
 }
 
+.gallery{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 10px 1em;
+}
     
 }

@@ -15,5 +15,17 @@
     text-align: center;
     width: 100%; 
 }
+    
+  .gallery{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 1em;
+  }
+  .gallery figure:hover {
+    border: 1px solid #352e26;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 
 }

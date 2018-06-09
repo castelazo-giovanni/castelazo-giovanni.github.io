@@ -243,5 +243,9 @@ footer {
   background-color: #09264A;
 }
 
-
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px 1em;
+}
 
