@@ -20,14 +20,14 @@ thead, tbody, tfoot {
 thead>tr>th {
   font-size: 25px;
   font-weight: bold;
-  padding: 8px 0;
+  padding: 8px;
 }
 
 tbody tr td {
   font-size: 16px;
   font-weight: lighter;
   text-align: center;  
-  padding: 6px 0;  
+  padding: 6px;  
 }
 
 tbody>tr th {
@@ -62,5 +62,5 @@ tfoot {
 }
 
 tfoot > tr > td {
-  padding: 7px 0;
+  padding: 7px;
 }
