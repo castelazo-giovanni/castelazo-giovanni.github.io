@@ -1,72 +1,251 @@
-/* CIT 230 - Assignment Portal CSS Template */
-/* You may use #HEX or color names */
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
-/* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; } 
+* {
+    box-sizing: border-box;
+}  /* This wildcard applies to all elements ensuring a box layout model */
 
-body { 
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: 'Roboto Slab', serif;
-    color: #00008B;
+body {
+  font-size: 16px;
+  font-family: 'Merriweather', serif;  /* Declare the base font-family */
 }
 
-h1 {
-    font-size: 26px;
-    color: #ffffff;
+header, nav, main, footer { 
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 100%; 
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-h2 {
-    font-size: 22px;
+header {
+    background-color: #09264A;
+    padding: 20px;
+    overflow: auto;
+}
+
+
+header h1 {
+    color: #F99820;
     text-align: center;
-    border-bottom: 1px solid #bbb;
+    
 }
 
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 940px;
-}
-
-header, footer, footer a {
-    text-align: center;
-    background-color: #00008B;
-    color: whitesmoke;
-}
 
 header img {
-    width: 200px;
-    height: auto;
+    float:left;    
+}
+
+
+header .subheading {
+    color: #F99820;
+    text-align: center; 
+    font-size: 1.5em;    
+}
+
+
+/*nav {}
+nav button {}
+nav ul {}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+*/
+
+nav { background-color: #2081F9; }
+
+nav button {
+    background-color: #2081F9;
+    border: solid 2px #F99820;
+    padding: .3em;
+    margin:auto;
+    font-size: 3em;
+    color: #F99820;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+nav button:hover {
+    background-color: #BBBBBB;
+    color: #000000;
+}
+
+
+
+
+
+
+nav ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li {
+    float: none;
+    position: relative;
+}
+
+
+nav ul li a {}
+
+
+nav ul li a:hover {
+    background-color: #09264A;
+}
+
+
+nav ul li.active a {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+        
+
+h3 {
+    background-color: #BBBBBB;
+    color: #F99820;
+    text-shadow: 1px 1.2px #000000;
+    padding: 10px; 
+    text-align: center;
+}
+
+
+table {
+    border-collapse: collapse;
+        
+}
+
+
+thead {
+    background-color: #F99820;
+  
+}
+
+
+table, td, th {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+main {}
+main h2 {
+    text-align: center;
+    color: #2081F9;
+    
+}
+
+
+main picture { margin: 0 0 .2rem 2%; width:100%; }
+
+
+main picture img {
+    width: 100%;    
+    float: left;
+}
+
+
+.current {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+}
+
+
+.current img {
+    float: left;
+    width: 125px;    
+}
+
+
+section .quickweather {
+    width: 300px;
+}
+
+
+section .quickweather p {
+    text-align: center;
+    margin: auto;
+}
+
+section .highlow {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+section .highlow p {
+    text-align: center;
+    margin: auto;
+}
+
+
+section .conditions {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+section .conditions p { 
+    text-align: center;
+    margin: auto;
+}
+
+
+.forecast { 
+    display: none; 
+}
+
+
+article {
+    background-color: #BBBBBB;
+    padding-bottom: 20px;
+}
+
+
+article img {
     float: right;
 }
 
+article .town-article{
+    padding-top: 5px; 
+    padding-bottom: 70px;
+    text-align: left;
+}
+
+
 footer {
-    font-size: 10px;
+    background-color: #09264A;
+    color: #F99820;
+    text-align: center; 
+    font-size: .7rem;
 }
 
-.style1 {
-	margin: 0 auto; 
-	border: 1px solid #bbb; 
-	padding: 5px; 
-	background-color: #eee; 
-	line-height: 1.5em;
+
+.contact {
+    width: 100%;
+    margin: 0;
+    padding: .1em;
+    background-color: #2081F9;
+    color: #000000;
 }
 
-.marquee {
-    width: 600px;
-	line-height: 40px;
-	background-color: white;
-	color: Black;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
+
+.footer-bar {
+  width: 100%;
+  padding: .1em;
+  background-color: #09264A;
 }
-.marquee p {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 10s linear infinite;
+
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px 1em;
 }
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
+
