@@ -12,7 +12,7 @@
 	<title>Franklin City Weather | Your Weather </title>
 </head>
     
-<body  >
+<body>
   <header>
       <img src="../../images/logo.png" width="200" height="200" alt="Your Weather | Because you want to know"> 
       <h1>YOUR WEATHER</h1>
@@ -38,7 +38,8 @@
         <img src="images/city/franklin-small.jpg" alt="Franklin City Picture">
     </picture>
       
-    <h2>Franklin</h2>
+  
+   <h2>Franklin</h2>
 		
   <!--
       <div class="current">         
@@ -54,7 +55,7 @@
             <div class="conditions">
                 <p>Precipitation:<strong>0&#37;</strong></p>  
                 <p>Wind Speed:<span id="windSpeed">5</span><strong> mph SW</strong></p> 
-                <p>Wind Chill: <div id="windChill"></div>
+                <p>Wind Chill: <span id="windChill"></span></p>
             </div> 
             </div>
       </div>   
@@ -62,14 +63,19 @@
       <div class="gallery">
         <figure>
         <figurecaption>
-        Motto: <span id="franklinMotto"></span><br><br>
-        Year Founded: <span id="franklinYearFounded"></span><br><br>
-        Population: <span id="franklinPopulation"></span><br><br>
-        Annual Rainfall: <span id="franklinAnnualRainfall"></span><br><br>
+        <span id="conditions"></span><br>
+        <span id="weatherIcon"></span><br>
+        Temperature: <span id="current-temp"></span><br><br>        
+        High: <span id="highTemp"></span><br><br>
+        Low: <span id="lowTemp"></span><br><br>
+        Wind Speed: <span id="windSpeed"></span><br><br>
+        Wind Chill: <span id="windChill"></span>
         </figurecaption>
         </figure>
       </div> 
-    
+      
+
+    <p align="center">&raquo; Town weather information provided by <a href="https://openweathermap.org/"><strong>OpenWeatherMap.org</strong></a> &laquo;</p>
     <section class="forecast">
       <h3>Ten Day Forecast</h3>
       <table>
@@ -130,7 +136,8 @@
   </footer>
 
   <script src="../../scripts/hamburgermenu.js"></script>
-  <script src="../../scripts/currentdate.js"></script>
-  <script src="../../scripts/windchill.js"></script>
+  <script src="../../scripts/currentdate.js"></script>  
+  <script src="../../scripts/weather.js"></script>
+  
 </body>
 </html>
