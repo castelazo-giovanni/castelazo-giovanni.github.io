@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head> 
+<head id="myHead"> 
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Franklin City Weather">
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/medium.css">
-	<link rel="stylesheet" href="styles/large.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-	<title>Franklin City Weather | Your Weather </title>
+	<title>Franklin City Weather | Greenville City </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
 </head>
     
 <body>
-  <header>
-      <img src="images/logo.png" width="200" height="200" alt="Your Weather | Because you want to know"> 
-      <h1>YOUR WEATHER</h1>
-      <div class="subheading"> Because you want to know </div>
-  </header>
+  <header id="myHeader"></header>
 
-  <nav>
-    <button class="hamburger" onclick="openHamburger()" id="hamburgerButton">MENU &#9776;</button>
+  <nav id="myNavigation">
+   <button class="hamburger" onclick="openHamburger()" id="hamburgerButton">MENU &#9776;</button>
     <ul id="mainmenu" class="navigation">
-    	<li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
     	<li><a href="franklin.html">Franklin</a></li>
     	<li><a href="greenville.html">Greenville</a></li>
     	<li><a href="springfield.html">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="gallery.html">Gallery</a></li>
-    </ul>		
+    </ul>
   </nav>
     
   <main>
@@ -101,13 +91,14 @@
     </article>		  
   </main>
     
-  <footer id="myFooter"></footer>
+  <footer id="myFooter"></footer> 
   
+  <script>$("#myFooter").load("modules/footer.html");</script>
+  <script>$("#myHead").load("modules/head.html");</script>
+  <script>$("#myHeader").load("modules/header.html");</script>
   <script src="scripts/hamburgermenu.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/wayfinding.js"></script>
-  <script>$("#myFooter").load("modules/footer.html");</script>
-  <script>$("#myNavigation").load("modules/navigation.html");</script>
-  <script>$("#myHeader").load("modules/header.html");</script>
+  <script src="scripts/weather.js"></script>  
 </body>
 </html>
