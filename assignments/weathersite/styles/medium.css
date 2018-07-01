@@ -65,6 +65,7 @@ nav li a:hover {
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-gap: 10px 1em;
+text-align: center;
 }
     
 }

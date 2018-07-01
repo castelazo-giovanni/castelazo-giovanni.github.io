@@ -135,12 +135,19 @@ main h2 {
 main picture { 
     margin: 0 13 .2rem 2%; 
     width:100%; 
+    display: block;
 }
 
 
 main picture img {
-    width: 100%;    
-    float: left;
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.center {
+  text-align: center;
 }
 
 
@@ -259,7 +266,10 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px 1em;
+  text-align: center;
 }
+
+
 
 @media only screen and (max-width: 37.5em) {
 .responsive {
@@ -274,18 +284,8 @@ footer {
   padding: 0;
 }
 
-.responsive ul {
-   display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #6fa69c;   
-    
-}
 
-.responsive ul li {
+.responsive ul li a
   display: block;
   padding: 5px;
   margin: 0; 
@@ -293,15 +293,5 @@ footer {
   border: 1px solid #352e26;
 }
 
-.responsive ul li a {
-    
-    color: #352e26;
-  padding: 10px;
-  text-decoration: none;  
-}
-
-.responsive li:hover{
-    background-color: #09264A;
-}
 
 }
