@@ -1,4 +1,4 @@
 function openHamburger() {
-    document.getElementsByClassName("navigation")[0].classList.toggle('responsive');
+   document.getElementsByClassName("mainmenu").classList.toggle('responsive');
     
 }

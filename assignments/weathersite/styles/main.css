@@ -19,6 +19,7 @@ header {
     background-color: #09264A;
     padding: 20px;
     overflow: auto;
+    margin: auto;
 }
 
 
@@ -41,17 +42,9 @@ header .subheading {
 }
 
 
-/*nav {}
-nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
-
-*/
-
-nav { background-color: #2081F9; }
+nav { 
+    background-color: #2081F9; 
+}
 
 nav button {
     background-color: #2081F9;
@@ -71,9 +64,6 @@ nav button:hover {
 }
 
 
-
-
-
 nav ul {
     display: none;
     list-style: none;
@@ -88,7 +78,8 @@ nav ul li {
 }
 
 
-nav ul li a {}
+nav ul li a {
+  padding: 10px;}
 
 
 nav ul li a:hover {
@@ -105,17 +96,17 @@ nav ul li.active a {
         
 
 h3 {
-    background-color: #BBBBBB;
-    color: #F99820;
-    text-shadow: 1px 1.2px #000000;
+    background-color: #F99820;
+    color: #000000;
     padding: 10px; 
     text-align: center;
+    border: 1px solid #000000;    
 }
 
 
 table {
-    border-collapse: collapse;
-        
+    border-collapse: collapse; 
+    width: 100%;
 }
 
 
@@ -130,15 +121,21 @@ table, td, th {
     padding: 5px;
 }
 
-main {}
+main {
+    padding: 1rem;
+    margin: .1em;
+}
+
 main h2 {
     text-align: center;
-    color: #2081F9;
-    
+    color: #2081F9;    
 }
 
 
-main picture { margin: 0 0 .2rem 2%; width:100%; }
+main picture { 
+    margin: 0 13 .2rem 2%; 
+    width:100%; 
+}
 
 
 main picture img {
@@ -204,19 +201,34 @@ section .conditions p {
 
 
 article {
-    background-color: #BBBBBB;
-    padding-bottom: 20px;
+    margin: auto;    
+    padding: 0;
+    text-align: left;
+    outline: #BBBBBB solid 10px;
+
+}
+article img {
+    width: 30%;
+    float: right;
+    min-width: 150px;
+    max-width: 300px;
 }
 
+article h3 {
+    background-color: #ffffff;
+    color: #F99820;
+    text-shadow: 1px 1.2px #000000;
+    border: none;
 
-article img {
-    float: right;
 }
 
 article .town-article{
-    padding-top: 5px; 
-    padding-bottom: 70px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin:  auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .5em;
 }
 
 
@@ -224,14 +236,14 @@ footer {
     background-color: #09264A;
     color: #F99820;
     text-align: center; 
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 
 .contact {
     width: 100%;
     margin: 0;
-    padding: .1em;
+    padding: .1rem;
     background-color: #2081F9;
     color: #000000;
 }
