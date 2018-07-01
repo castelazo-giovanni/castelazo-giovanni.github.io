@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Franklin City Weather">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<title>Franklin City Weather | Your Weather </title>
+</head>
+    
+<body  >
+  <header>
+      <img src="images/logo.png" width="200" height="200" alt="Your Weather | Because you want to know"> 
+      <h1>YOUR WEATHER</h1>
+      <div class="subheading"> Because you want to know </div>
+  </header>
+
+  <nav>
+    <button class="hamburger" onclick="openHamburger()" id="hamburgerButton">MENU &#9776;</button>
+    <ul id="mainmenu" class="navigation">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      
+      <h2>Help us stay up to date.</h2>
+      
+      <p><br>Use the form below to tell us of current weather information in your area.  Help us keep others safe and informed.<br><br> </p>
+      <form>
+          <fieldset>
+              <legend>Your Information</legend>
+              <br>
+              Full Name:<br>
+              <input type="text" name="fullname" required pattern="[A-Za-z]+" minlength="5">
+              <br><br>
+              Email:<br>
+              <input type="email" name="email" placeholder="name@example.com">
+              <br><br>
+              Phone Number:<br>
+              <input type="tel" name="phonenumber" required>
+              <br><br>
+              Zip Code:<br>
+              <input type="number" name="zipcode" required>          
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Storm Report</legend>
+              <br>
+              Storm Date:<br>
+              <input type="date" name="stormdate">
+              <br><br>
+              Storm Type:<br>
+              <input list="stormtype">
+                <datalist id="stormtype">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+              <br><br>
+              Storm Severity:<br>
+              <label for="rating">Rating (1 to 10)</label>
+		      <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		      <span id="ratingvalue">5</span>
+              <br><br>
+              Storm Region:<br>
+              <select name="storm-region">
+                  <option selected disabled>--Select Region--</option>
+                  <option value="franklin">Franklin</option>
+                  <option value="greenville">Greenville</option>
+                  <option value="springfield">Springfield</option>
+              </select>
+              <br><br>
+              Are you in danger?<br>
+              <input type="radio" name="situation" value=""> Yes
+              <br>
+              <input type="radio" name="situation" value=""> No
+              <br>
+              <input type="radio" name="situation" value=""> Maybe
+              <br><br>
+              Any additional information we should know?<br>
+              <textarea name="comments"></textarea>
+              <br><br>              
+          </fieldset>
+          <br>
+          <button class="submit" type="submit" formaction="thankyou.html">Submit</button>
+          <br><br>
+     </form>
+   
+  </main>
+    
+  <footer id="myFooter"></footer>
+  
+  <script src="scripts/hamburgermenu.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/wayfinding.js"></script>
+  <script src="scripts/stormcenter.js"></script>
+  <script>$("#myFooter").load("modules/footer.html");</script>
+  <script>$("#myNavigation").load("modules/navigation.html");</script>
+  <script>$("#myHeader").load("modules/header.html");</script>
+</body>
+</html>
