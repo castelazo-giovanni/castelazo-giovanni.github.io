@@ -263,6 +263,16 @@ footer {
 
 
 .responsive {
+    color: black;
     display: block;
+    max-width: 250px;
+}
+
+.responsive ul li {
+    
+    align-items: center;
+}
+.responsive li:hover{
+    background-color: #09264A;
 }
 

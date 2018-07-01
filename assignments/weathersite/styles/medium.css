@@ -5,7 +5,8 @@ header button { display: none; }
     
 nav button { 
     display: none; 
-}  /* hamburger button does not need to be shown in the medium on up views */
+}  
+/* hamburger button does not need to be shown in the medium on up views */
     
 .forecast { 
     display: block;

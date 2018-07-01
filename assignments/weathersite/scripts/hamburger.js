@@ -1,4 +1,4 @@
-function openHamburger() {
-   document.getElementsByClassName("mainmenu").classList.toggle('responsive');
-    
-}
+
+const mainmenu = document.getElementById('mainmenu');
+const openHamburger = () => mainmenu.classList.toggle('responsive')
+
