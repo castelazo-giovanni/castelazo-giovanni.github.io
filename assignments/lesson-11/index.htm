@@ -4,142 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
-	<link rel="stylesheet" href="css/style.css">
-	<!-- <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-	<script>
-		$(function () {
-			// All jQuery code goes here
-            
-            // alert("Hello jQuery!!");
-            
-            // $('#alcoveLogo').css('opacity', 0.4);
-            
-            // $('.servicesBtn').css('color', '#FFF');
-            
-            // $('button').css('border', '1px solid red');
-            
-            // $('h2').css('border', '1px solid red');
-            
-            // $('input[name="nameVal"]').css('border', '1px solid red');
-            
-            // $('input[name!="phoneNum"]').css('border', '1px solid red');
-            
-            // $('input[name$="Val"]').css('border', '1px solid red');
-            
-            // $('li:first').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:last').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:odd').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:even').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:eq(3)').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:first-of-type').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:only-of-type').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:contains("Catalog")').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:empty').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:has("a")').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $('li:nth-child(3)').css('background-color', 'rgb(248, 95, 95)');
-            
-            // $("#alcoveLogo").next().css('background-color', 'rgba(255, 0, 0, 0.2)');
-            
-            // $(".box1").nextAll().css('background-color', 'rgba(255, 0, 0, 0.2)');
-            
-            //$('.header').children().css('background-color', 'rgba(255, 0, 0, 0.2)');
-            
-            // $(".navigation > li:eq(2)").parent().css('opacity', '0.3');
-            
-            // $(".navigation > li:eq(2)").parent().parent().parent().css('opacity', '0.3');
-            
-            // $('.servicesBtn').closest('div').css('background-color', 'rgb(248, 95, 95)');
-            
-            
-            // console.log ($('input[type="text"]').css('background-color'));
-            
-            
-            /* var toggleStyle = (function() {
-                
-                var inputFields = $('input[type="text"]');
-                    
-                if (inputFields.css('background-color') === 'rgb(255, 0, 0)') {
-                    // Set background color to white
-                    inputFields.css('background-color', 'rgb(255, 255, 255)');         
-                } else {
-                    // set background color to red
-                    inputFields.css('background-color', 'rgb(255, 0, 0)');
-                }
-            });
-            
-             $('#ReqAQuoteBtn').click(toggleStyle); */
-            
-            // $('.coreValues').append("<li><strong>This is brand new !!</strong></li>");
-            
-            // $("<li><strong>This is also great !!</strong></li>").appendTo('.coreValues');
-            
-            // $('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
-            
-            // $("<li><strong>This is also great !!</strong></li>").prependTo('.coreValues');
-            
-            var nameVal = $('input[name="nameVal"]');
-            
-            function FillEmpty(){
-                if (nameVal.val() === ''){
-                    nameVal.val('John Doe');                    
-                }
-            };
-            
-            $('#ReqAQuoteBtn').click(FillEmpty); 
-            
-            
-            
-		})       
-	</script>
-    
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts/myExternalFile.js"></script>
+    <!-- in case CDN is inaccessible, next line of code will be the fallback -->
     <!-- <script>
-        // All javascript code goes here
-        window.onload = function(){
-
-            /* var elements = document.getElementById('alcoveLogo');
-            elements.style.opacity = 0.2; */   
-            
-            /* var elements = document.getElementsByClassName('servicesBtn');
-            
-            for(var i=0; i < elements.length; i++){
-                if(i % 2 == 0){
-                    elements[i].style.color = 'rgb(0, 106, 255)';
-                }
-            } */
-            
-           /* var elements = document.getElementsByTagName('h2');
-            
-            for(var i = 0; i < elements.length; i++){
-                elements[i].style.borderColor = 'rgb(255,0,0)';
-                elements[i].style.borderWidth = '2px';
-                elements[i].style.borderStyle = 'solid';
-                elements[i].style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
-            } */
-            
-            /* var element = document.querySelector(".navigation > li:nth-child(3) > a");
-            element.style.color = 'rgb(255, 0, 0)';*/
-            
-            /* var element = document.querySelectorAll(".navigation > li:nth-child(even) > a");
-            
-            for(var i = 0; i < element.length; i++){
-                element[i].style.color = 'rgb(255, 0, 0)';
-            } */
-            
-        }
-    </script> -->
-    
-    
+            window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>')
+         </script> -->
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
 </head>
 
 <body>
@@ -165,7 +37,7 @@
 			<!-- Get a Free Quote Form -->
 			<div class="registerForm">
 				<form id="GetAQuoteForm">
-					<img class="ReqAQuoteImg" src="img/quote.png" alt="">
+					<img class="ReqAQuoteImg" src="images/quote.png" alt="">
 					<br>
 					<div class="FormFieldHolder">
 						<div class="labelHolder">
@@ -197,7 +69,7 @@
 					<div class="FormFieldHolder">
 						<div class="labelHolder"></div>
 						<div class="FieldHolder">
-							<button id="ReqAQuoteBtn">Request A Quote !</button>
+							<button id="ReqAQuoteBtn" type="button">Request A Quote !</button>
 						</div>
 					</div>
 				</form>
@@ -241,9 +113,9 @@
 				<div class="boxes box3">
 					<h2>Our Work</h2>
 					<hr>
-					<a href="#" class="showcaseBtn"><img src="img/websites.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/mobileapps.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/webapps.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/websites.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/mobileapps.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/webapps.jpg" alt=""></a>
 					<select name="showcaseOthers" id="showcaseOthers">
 						<option value="01">UI/UX Design</option>
 						<option value="02">Big Data Implementation</option>
@@ -253,12 +125,20 @@
 				</div>
 			</div>
 		</div>
-
+        <br>
 		<div class="footer">
-			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+            <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+           
+                <a href="animatedMenuBegin.htm">Animated Menu</a>  &emsp;              
+				<a href="DropDownMenuBegin.htm">Drop Down Menu</a> &emsp;
+				<a href="fruitBasketBegin.htm">Fruit Basket</a> &emsp;
+				<a href="InsertHTMLBegin.htm">Insert HTML</a> &emsp;
+                <a href="toggleButtonBegin.htm">Toggle Button</a>&emsp;
+            </h5>
+           
 		</div>
 	</div>
-    
+ 
 </body>
 
 </html>

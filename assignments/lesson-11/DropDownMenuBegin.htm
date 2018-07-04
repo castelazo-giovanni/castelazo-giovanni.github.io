@@ -3,28 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dropdown Menu</title>
-	<link rel="stylesheet" href="css/dropdownmenu.css">
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script>
-	$(function(){
-		// All jQuery code goes here
-        
-       /* $('.dropdownMenu > li').hover ( function(){
-            // Mouseover            
-            $(this).children("ul").slideDown(200);
-        }, function() {
-            // Mouseout
-            $(this).children("ul").slideUp(200);
-        }); */
-        
-        $('.dropdownMenu > li').hover ( function(){
-            // Mouseover            
-            $(this).children("ul").slideToggle(200);
-        })
-        
-        
-	})
-	</script>
+	<link rel="stylesheet" href="styles/dropdownmenu.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts/myExternalFile.js"></script>
+    <!-- in case CDN is inaccessible, next line of code will be the fallback -->
+    <!-- <script>
+            window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>')
+         </script> -->
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
 </head>
 <body>
 <ul class="dropdownMenu">
