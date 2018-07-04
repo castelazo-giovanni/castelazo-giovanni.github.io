@@ -41,6 +41,7 @@ body {
 	float:left;
 	background:url('../img/logo.png');
 	background-color:rgb(235, 253, 212);
+	opacity:1.0;
 }
 
 .navbar {
