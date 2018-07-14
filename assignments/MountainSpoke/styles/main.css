@@ -1,0 +1,67 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;  /* Declare the base font-family */
+}
+
+/* Navigation */
+.logoImage{
+    float: left;
+    margin: 5px 15px 15px 5px;
+    left: 0;
+    display:inline;
+    
+}
+.headerBackground{
+    background:#6B7A8F;
+    height: 225px;
+}
+
+.headerBackground h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/*Footer*/
+.footerContact{
+    background:#6B7A8F;
+    height: 90px;
+    text-align: center;
+    font-size: .8em;
+    padding-top: 10px;   
+}
+
+/*
+@media only screen and (max-width: 37.5em) {
+.responsive {
+    color: black;
+    display: block;
+    max-width: 250px;
+    display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+    .responsive ul li a {
+  display: block;
+  padding: 5px;
+  margin: 0; 
+  font-size: 1.5em;
+  border: 1px solid #352e26;
+}
+
+*/
+}
