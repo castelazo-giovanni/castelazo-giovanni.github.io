@@ -8,63 +8,63 @@ nav button {
 }  
 /* hamburger button does not need to be shown in the medium on up views */
     
-    
-nav{
-    position: flex;
-    display:inline-block;
-    float: right;
-    width: 75%;
-    
-    
+.logoImage{
+    float: left;
+    margin: 5px 15px 15px 5px;
+    left:auto;
+        
 }
+    
+.headerBackground{
+    background:#6B7A8F;
+    height: 260px;   
+    display:flex;   
+}  
     
 .headerBackground h1 {
     font-size: 2em;
+    text-align: center;    
+    display: inline;
+    flex-flow: none;
+    align-items: none;
+    max-height: 75%;
+    max-width: 40%;
 }
 
-nav ul{
-    margin: 0;
-    padding: 0;
     
+/* Navigation */
+nav ul.navigation {
+  display:flex;
 }
 
-nav ul li{
-    display: inline-block;
-    list-style-type: none;
-    border-right: 1px solid #000000;
-    padding-right: 5px;
-    padding-left: 5px;
-    text-align: center;
-    font-size: 1.5em;
-}
-    
-nav li:last-child {
-    border-right: none;
-}   
-    
-nav li a {
-    color: #000000;
-    display: block;
-    line-height: 2em;
-    padding: 0.5em 1em;
-    text-decoration: none;  
-}    
-
-nav li.active a {
-    color: #FFFFFF;
-}
-    
-
-nav li a:hover {
-    background-color: #DCC7AA;
-    color: #000000;
+nav ul {
+    flex-flow: row;    
 }
 
-.gallery{
-display: grid;
+nav li {
+    border: none;
+    border-right: 1px solid #352e26;
+    border-left: 1px solid #352e26;
+}
+
+.mainArea {
 grid-template-columns: 1fr 1fr;
-grid-gap: 10px 1em;
-text-align: center;
 }
     
+.topArea{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 10px;
+    text-align: center;
+    padding-top: 20px;
+ }  
+    
+.topArea img {
+    display:flex;
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+}
+    
+ 
 }

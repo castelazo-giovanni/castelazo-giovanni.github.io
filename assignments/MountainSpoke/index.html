@@ -8,42 +8,114 @@
     
 <body>
   <header id="myHeader"></header>
-    
-  <main>
-      <div class="gallery">
-        <figure>
-        <h2> Franklin </h2>
-        <img src="images/city/FranklinCity1.jpg" alt="Franklin City Center" width="150"><br>
-        <br>
-        <span id="franklinMotto"></span><br><br>
-        Year Founded: <span id="franklinYearFounded"></span><br><br>
-        Population: <span id="franklinPopulation"></span><br><br>
-        Annual Rainfall: <span id="franklinAnnualRainfall"></span><br><br>       
-        </figure>
-          
-        <figure>
-        <h2> Greenville </h2>
-        <img src="images/city/GreenvilleCity1-1.jpg" alt="Greenville City Center" width="150"><br>
-        <br>
-        <span id="greenvilleMotto"></span><br><br>
-        Year Founded: <span id="greenvilleYearFounded"></span><br><br>
-        Population: <span id="greenvillePopulation"></span><br><br>
-        Annual Rainfall: <span id="greenvilleAnnualRainfall"></span><br><br>
-        
-        </figure>
-          
-        <figure>
-        <h2> Springfield </h2>
-        <img src="images/city/SpringfieldCity1.jpg" alt="Springfield City Center" width="150"><br>
-        <br>
-        <span id="springfieldMotto"></span><br><br>
-        Year Founded: <span id="springfieldYearFounded"></span><br><br>
-        Population: <span id="springfieldPopulation"></span><br><br>
-        Annual Rainfall: <span id="springfieldAnnualRainfall"></span><br><br>
-        
-        </figure>
-      </div>
+  <div><nav id="myNavigation">
+    <button class="hamburger" onclick="openHamburger()" id="hamburgerButton">MENU &#9776;</button>
+    <ul id="mainmenu" class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Adventures</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">SALES</a></li>
+            <li><a href="#">Parts &#38; Service</a></li>
+            <li><a href="#">Contact Page</a></li>
+        </ul>
+       </nav></div>  
+  <main >
+      <div class="topArea">
       
+      <div class=infoSection>
+            <h2> Mission Statement </h2>            
+            <img src="images/Mission1.jpg" alt="Mountain Spoke Bike Shop | Our Promise" >        
+            <span id="infoDetails"><p>
+                We promise to provide a great experience for bike enthusiasts of all skill levels. We will strive to provide the best way to book tour trips, buy products, find a repair service, or buy needed parts.  We understand the need to enjoy the outdoors, and will do our best to help you achive that.</p></span>
+        </div>
+          
+        <div class=infoSection>
+            <h2> Join Our Mailing List </h2>            
+                    <form id="joinMailingList">
+					<div class="FormFieldHolder">
+						<div class="labelHolder">
+							<label>Full Name</label>
+						</div>
+						<div class="FieldHolder">
+							<input type="text" name="nameVal">
+						</div>
+					</div>
+                        <br>
+					<div class="FormFieldHolder">
+						<div class="labelHolder">
+							<label>E-Mail</label>
+						</div>
+						<div class="FieldHolder">
+							<input type="text" name="emailVal">
+						</div>
+					</div>
+                    <br>
+
+					<div class="FormFieldHolder">
+						<div class="labelHolder"></div>
+						<div class="FieldHolder">
+							<button id="ReqAQuoteBtn" type="button" onclick="joinList()">JOIN! !</button>
+						</div>
+					</div>
+                        
+				</form>
+            <br> <h2>TODAYS WEATHER</h2>    
+        Condition: <span id="conditions"></span><br><br>        
+        Temperature: <span id="current-temp"></span><br><br>        
+        High: <span id="highTemp"></span><br><br>
+        Low: <span id="lowTemp"></span><br><br>
+
+        </div>  
+ 
+        </div>
+      
+            
+      <div class="mainArea">
+        <div class=infoSection>
+            <h2> ADVENTURES </h2>            
+            <img src="images/Adventures1.jpg" alt="Mountain Spoke Bike Adventures | Bike Daredevils" >        
+            <span id="infoDetails"><p>
+                Come join us for any of the many adventures we offer. We have a great amount of choices for the whole family.<br><br>
+                <a href="">&lt;&lt; Click here to learn more &gt;&gt;</a>
+            </p></span>
+        </div>
+          
+        <div class=infoSection>
+            <h2> Events </h2>            
+            <img src="images/Event1.jpg" alt="Mountain Spoke Bike Events | Biking Enthusiasts" >        
+            <span id="infoDetails"><p>
+                Are you a world class bike enthusiast?  Maybe you just like to enjoy the outdoors with other people.  Whatever your skill level might be, come joint us for any of our events.  We have events that are for any skill level.<br><br>
+                <a href="">&lt;&lt; Click here to see upcoming events &gt;&gt;</a>
+            </p></span>
+        </div>
+          
+        <div class=infoSection>
+            <h2> SALES </h2>            
+            <img src="images/Adventures1.jpg" alt="Mountain Spoke Sales for You | Bike Sales" >        
+            <span id="infoDetails"><p>
+                Ready to change out your bike?  Come see our great sales event we war having this month.<br><br>
+                <a href="">&lt;&lt; Click here start shopping &gt;&gt;</a>
+            </p></span>
+        </div>
+          
+        <div class=infoSection>
+            <h2> Parts and Services </h2>            
+            <img src="images/Adventures1.jpg" alt="Mountain Spoke Parts & Services | Bike Garage" >        
+            <span id="infoDetails"><p>
+                Come join us for any of the many adventures we offer. We have a great amount of choices for the whole family.<br><br>
+                <a href="">&lt;&lt; Click here to get what you need &gt;&gt;</a>
+            </p></span>
+        </div>
+          
+        <div class=infoSection>
+            <h2> Contact Us </h2>            
+            <img src="images/Adventures1.jpg" alt="Mountain Spoke Bike Adventures | Mountain Spoke Support" >        
+            <span id="infoDetails"><p>
+                Do you have a question that you need answered?<br><br>
+                <a href="">&lt;&lt; Click here to contact us &gt;&gt;</a>
+            </p></span>
+        </div>
+      </div>
   </main>
     
   <footer id="myFooter"></footer>
@@ -53,6 +125,7 @@
   <script>$("#myHeader").load("modules/header.html");</script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
+  <script src="scripts/weather.js"></script>
   <script src="scripts/wayfinding.js"></script>
   
 </body>

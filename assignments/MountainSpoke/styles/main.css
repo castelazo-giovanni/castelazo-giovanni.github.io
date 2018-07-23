@@ -11,23 +11,76 @@ body {
     font-family: 'Merriweather', serif;  /* Declare the base font-family */
 }
 
-/* Navigation */
+/* Header */
 .logoImage{
     float: left;
     margin: 5px 15px 15px 5px;
     left: 0;
-    display:inline;
-    
+    display: flex;
+    max-width: 100%;
+    height: auto; 
+    width: auto\9; 
 }
+
 .headerBackground{
     background:#6B7A8F;
-    height: 225px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;    
 }
 
 .headerBackground h1 {
     color: #FFFFFF;
     text-align: center;
     font-size: 1em;
+}
+
+
+/* Navigation */
+nav ul.navigation {
+  display: none;
+}
+
+nav{
+    padding: 0px;
+    margin:0px;  
+}
+  
+nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #6B7A8F;   
+}
+  
+nav li{
+    display: block;
+    padding: 5px;
+    margin: 0; 
+    font-size: 1.2em;
+    border: 1px solid #352e26;  
+}
+    
+nav ul li a {    
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;      
+}
+  
+  
+nav ul li.active{
+    background-color: #924534;     
+}
+
+nav ul li.active a{
+  color: #FFFFFF;
+}
+  
+nav ul li:hover {
+    background-color: #DCC7AA;      
 }
 
 
@@ -38,6 +91,43 @@ body {
     text-align: center;
     font-size: .8em;
     padding-top: 10px;   
+}
+
+/* Content Sections */
+
+.mainArea {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px 1em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.infoSection {
+    border: 1px solid #F7882F;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.infoSection h2{
+    background-color: #F7882F;
+    padding: 4px;
+}
+
+.infoSection img {
+ 
+    //margin: 5px 15px 15px 5px; 
+    max-width: 100%;
+    height: auto; 
+}
+
+.topArea h2 {        
+    background-color: #DCC7AA;
+}
+
+.topArea .infoSection {
+    border: 1px solid #DCC7AA;
 }
 
 /*
