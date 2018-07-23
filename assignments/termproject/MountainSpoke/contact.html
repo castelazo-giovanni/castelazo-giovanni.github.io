@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head id="myHead"> 
+	<meta charset="utf-8">
+	<title>The Mountain Spoke | Bicycle Enthusiast | Sales Event</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+</head>
+    
+<body>
+  <header id="myHeader"></header>
+  <div><nav id="myNavigation">
+    <button class="hamburger" onclick="openHamburger()" id="hamburgerButton">MENU &#9776;</button>
+    <ul id="mainmenu" class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventures.html">Adventures</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">SALES</a></li>
+            <li><a href="services.html">Parts &#38; Service</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+        </ul>
+      </nav>
+    </div>  
+  
+      
+      <main class="mainAdventure">
+      <div class="topArea">
+      
+        <div class="infoSection">
+            <h2> Map to our Location </h2>  
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410354946!2d-111.09290618448658!3d45.67227662755608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1532389568433" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+          
+        <div class="infoSection">
+            <h2> Contact Us </h2>            
+        <form onsubmit="alert('Thank you for your inquiry!  We will contact you soon.');reset()">
+          <fieldset>
+              <legend>Your Information</legend>
+              <br>
+              Full Name:<br>
+              <input type="text" name="fullname" required pattern="[A-Za-z]+" minlength="5">
+              <br><br>
+              Email:<br>
+              <input type="email" name="email" placeholder="name@example.com">
+              <br><br>
+              Phone Number:<br>
+              <input type="tel" name="phonenumber" required>
+              <br><br>
+              What can we help you with?<br>
+              <textarea name="comments"></textarea>
+          </fieldset>
+          <br>
+          <br>
+           <button class="submit" type="submit">SEND</button>
+          <br><br>
+     </form>
+        </div>
+    </div>    
+  </main>
+ 
+      
+
+  
+    
+  <footer id="myFooter"></footer>
+  
+  <script>$("#myFooter").load("modules/footer.html");</script>
+  <script>$("#myHead").load("modules/head.html");</script>
+  <script>$("#myHeader").load("modules/header.html");</script>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/wayfinding.js"></script>
+  <script src="scripts/prices.js"></script>
+  
+</body>
+</html>
