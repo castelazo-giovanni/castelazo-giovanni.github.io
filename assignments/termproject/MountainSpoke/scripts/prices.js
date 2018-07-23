@@ -1,6 +1,6 @@
 
 var request = new XMLHttpRequest();
-request.open('GET', "https://kristinaplauche.github.io/data/service-prices.json", true);
+request.open('GET', "https://castelazo-giovanni.github.io/assignments/termproject/MountainSpoke/data/prices.json", true);
 request.responseType = 'json';
 request.send();
 request.onload = function () {
