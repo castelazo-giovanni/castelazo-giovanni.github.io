@@ -11,4 +11,14 @@ grid-template-columns: 1fr 1fr 1fr;
     padding-left: 130px;    
 }
 
+.mainAdventure img{
+    height: 350px;    
+    padding-right: 280px;
+    padding-left: 280px;    
+}
+
+.eventArea .eventImg{
+    height: 275px;
+}
+    
 }

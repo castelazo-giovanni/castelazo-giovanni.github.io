@@ -4,6 +4,6 @@ function openHamburger() {
 }
 
 function joinList() {
-    alert("Thank you for joining!");
+    alert("Thank you your interest!  Your information has been submitted");
     document.getElementById('joinMailingList').reset();
 }

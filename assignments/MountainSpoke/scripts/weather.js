@@ -5,14 +5,6 @@ var urlString, urlArray, pageHREF, menu, i, currentURL;
 
 var cityID;
 
-/*if (pageHREF == "franklin.html"){
-    cityID = 4156210;
-} else if (pageHREF == "greenville.html"){
-    cityID = 4428475;
-} else {
-    cityID = 4250542;
-}*/
- 
 cityID = 5641727;
 
 

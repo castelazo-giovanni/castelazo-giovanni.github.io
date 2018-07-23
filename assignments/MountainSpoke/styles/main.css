@@ -130,28 +130,41 @@ nav ul li:hover {
     border: 1px solid #DCC7AA;
 }
 
-/*
-@media only screen and (max-width: 37.5em) {
-.responsive {
-    color: black;
-    display: block;
-    max-width: 250px;
-    display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.mainAdventure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px 1em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
 }
 
-
-    .responsive ul li a {
-  display: block;
-  padding: 5px;
-  margin: 0; 
-  font-size: 1.5em;
-  border: 1px solid #352e26;
+.mainAdventureInfo{
+    display:block;
+    align-items: center;
 }
 
-*/
+.mainAdventureInfo img{
+    display:block;
+    align-items: center;
+    float: left;
+}
+ 
+.eventArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 1em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.eventArea .eventImg{
+    display:flex;
+    height: 120px;
+    width: 100%;
+    padding: 5px; 
+}
+
 }
