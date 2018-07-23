@@ -1,0 +1,20 @@
+{
+    "services": [
+        {
+            "name": "Tune Up",
+            "price": "$80"
+        },
+        {
+            "name": "Flat Tire Repair",
+            "price": "$20"
+        },
+        {
+            "name": "Chain Repair",
+            "price": "$40"
+        },
+        {
+            "name": "Tire Spokes",
+            "price": "$50"
+        }
+    ]
+}

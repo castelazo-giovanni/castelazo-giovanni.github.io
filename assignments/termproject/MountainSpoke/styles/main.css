@@ -115,6 +115,13 @@ nav ul li:hover {
     padding: 4px;
 }
 
+.mainArea h3{
+    display: flex;
+    background-color: #F7882F;
+    padding: 4px;
+    width: 100%;
+}
+
 .infoSection img {
  
     /*margin: 5px 15px 15px 5px; */
@@ -167,4 +174,58 @@ nav ul li:hover {
     padding: 5px; 
 }
 
+.infoSection ul {
+    text-align: left;
+}
+
+/* Table */
+table,th,td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+   
+}
+
+table, .sales-menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead {
+  background-color: #BBBBBB;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000000;
+  
+}
+
+tbody>tr>th {
+  background-color: #F7882F;
+  color: #423c3c;
+  font-size: 1.3em;
+  
+}
+
+tbody>tr:nth-child(even) {
+  background: #DCC7AA;
+}
+
+tbody>tr:nth-child(odd) {
+  background: #F7C331;
+}
+
+
+tbody {
+  
+}
+
+tfoot {
+  font-size: .7em;
+  background-color: #BBBBBB;
+  color: #000000;
+ 
+
+}
 }
