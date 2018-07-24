@@ -3,11 +3,23 @@
 <head id="myHead"> 
 	<meta charset="utf-8">
 	<title>The Mountain Spoke | Bicycle Enthusiast </title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Mountain Spoke">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">    
 </head>
     
 <body>
-  <header id="myHeader"></header>
+  <header id="myHeader">
+	 <div class="headerBackground"><img src="images/MSLogo.png" class="logoImage" height="200px" alt="The Mountain Spoke | Bicycle Tours and Adventures"> 
+	   <br><h1 class="headerMotto">The best routes are the ones you haven't ridden.<br></h1><br>
+	</div>
+  </header>
+  
   <div><nav id="myNavigation">
     <button class="hamburger" onclick="openHamburger()" id="hamburgerButton">MENU &#9776;</button>
     <ul id="mainmenu" class="navigation">
@@ -69,11 +81,18 @@
           
   </main>
     
-  <footer id="myFooter"></footer>
+  <footer id="myFooter">
+	<section class="footerContact">    
+		<strong>Mountain Spoke <br>
+			3950 Valley Commons Drive <br>
+			Bozeman, MN 59717 <br>
+			(999) 999-9999 <br>
+			customersupport@mountainspoke.com<br>
+			<a href="video.html">Castelazo - Overview Video</a>
+		</strong>
+	</section>
+  </footer>
   
-  <script>$("#myFooter").load("modules/footer.html");</script>
-  <script>$("#myHead").load("modules/head.html");</script>
-  <script>$("#myHeader").load("modules/header.html");</script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/weather.js"></script>

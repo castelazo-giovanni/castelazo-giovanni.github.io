@@ -86,7 +86,7 @@ nav ul li:hover {
 /*Footer*/
 .footerContact{
     background:#6B7A8F;
-    height: 90px;
+    height: 105px;
     text-align: center;
     font-size: .8em;
     padding-top: 10px;   
@@ -226,4 +226,20 @@ tfoot {
 iframe {
     border: 1px #DCC7AA solid; 
     padding-bottom: 20px;
+}
+
+.videoSection h2{
+    background-color: #F7882F;
+    padding: 4px;
+    text-align: center;
+}
+
+video {
+  /* Make video to at least 100% wide and tall */
+  max-width: 100%; 
+  max-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
 }

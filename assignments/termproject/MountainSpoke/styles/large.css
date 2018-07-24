@@ -21,4 +21,10 @@ grid-template-columns: 1fr 1fr 1fr;
     height: 275px;
 }
     
+video {
+  /* Make video to at least 100% wide and tall */
+  max-width: 50%; 
+  max-height: 50%; 
+}
+    
 }

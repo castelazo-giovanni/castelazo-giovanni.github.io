@@ -69,5 +69,11 @@ grid-template-columns: 1fr 1fr;
 .eventArea .eventImg{
     height: 180px;
 }
+
+video {
+  /* Make video to at least 100% wide and tall */
+  max-width: 75%; 
+  max-height: 75%; 
+}
     
 }
