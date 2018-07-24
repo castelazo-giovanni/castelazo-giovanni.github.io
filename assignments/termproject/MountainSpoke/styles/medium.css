@@ -25,8 +25,8 @@ nav button {
     font-size: 2em;
     text-align: center;    
     display: inline;
-    flex-flow: none;
-    align-items: none;
+    /*flex-flow: none;
+    align-items: none;*/
     max-height: 75%;
     max-width: 40%;
 }

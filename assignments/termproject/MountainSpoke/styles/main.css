@@ -19,7 +19,6 @@ body {
     display: flex;
     max-width: 100%;
     height: auto; 
-    width: auto\9; 
 }
 
 .headerBackground{
@@ -203,7 +202,7 @@ thead {
 
 tbody>tr>th {
   background-color: #F7882F;
-  color: #423c3c;
+  color: #000000;
   font-size: 1.3em;
   
 }
@@ -217,15 +216,14 @@ tbody>tr:nth-child(odd) {
 }
 
 
-tbody {
-  
-}
-
 tfoot {
   font-size: .7em;
   background-color: #BBBBBB;
   color: #000000;
- 
-
 }
+
+/* iFrame */
+iframe {
+    border: 1px #DCC7AA solid; 
+    padding-bottom: 20px;
 }
