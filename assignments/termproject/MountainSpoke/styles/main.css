@@ -242,4 +242,7 @@ video {
   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
   width: auto;
   height: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
 }
