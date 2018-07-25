@@ -243,3 +243,7 @@ video {
   width: auto;
   height: auto;
 }
+
+.makeBold {
+        font-weight: bold;
+}
