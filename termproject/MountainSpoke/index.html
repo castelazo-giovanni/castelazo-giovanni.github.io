@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head id="myHead"> 
+	<meta charset="utf-8">
+	<title>The Mountain Spoke | Bicycle Enthusiast </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+</head>
+    
+<body>
+  <header id="myHeader"></header>
+    
+  <div><nav id="myNavigation">
+    <button class="hamburger" onclick="openHamburger()" id="hamburgerButton">MENU &#9776;</button>
+    <ul id="mainmenu" class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventures.html">Adventures</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li ><a href="sales.html"><span class="makeBold">SALES</span></a></li>
+            <li><a href="services.html">Parts &#38; Service</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+        </ul>
+      </nav>
+    </div>  
+  <main >
+      <div class="topArea">
+      
+      <div class="infoSection">
+            <h2> Mission Statement </h2>            
+            <img src="images/Us1.jpg" alt="Mountain Spoke Bike Shop | Our Promise" >        
+            <p>
+                We promise to provide a great experience for bike enthusiasts of all skill levels. We will strive to provide the best way to book tour trips, buy products, find a repair service, or buy needed parts.  We understand the need to enjoy the outdoors, and will do our best to help you achive that.</p>
+        </div>
+          
+        <div class="infoSection">
+            <h2> Join Our Mailing List </h2>            
+                    <form id="joinMailingList">
+					<div class="FormFieldHolder">
+						<div class="labelHolder">
+							<label>Full Name</label>
+						</div>
+						<div class="FieldHolder">
+							<input type="text" name="nameVal">
+						</div>
+					</div>
+                        <br>
+					<div class="FormFieldHolder">
+						<div class="labelHolder">
+							<label>E-Mail</label>
+						</div>
+						<div class="FieldHolder">
+							<input type="text" name="emailVal">
+						</div>
+					</div>
+                    <br>
+
+					<div class="FormFieldHolder">
+						<div class="labelHolder"></div>
+						<div class="FieldHolder">
+							<button id="joinMail" type="button" onclick="joinList()">JOIN! !</button>
+						</div>
+					</div>
+                        
+				</form>
+            <br> <h2>TODAYS WEATHER </h2>  
+        Condition: <span id="conditions"></span><br><br>        
+        Temperature: <span id="current-temp"></span><br><br>        
+        High: <span id="highTemp"></span><br><br>
+        Low: <span id="lowTemp"></span><br><br>
+
+        </div>  
+ 
+        </div>
+      
+            
+      <div class="mainArea">
+        <div class=infoSection>
+            <h2> ADVENTURES </h2>            
+            <img src="images/Adventures1.jpg" alt="Mountain Spoke Bike Adventures | Bike Daredevils" >        
+            <p>
+                Come join us for any of the many adventures we offer. We have a great amount of choices for the whole family.<br><br>
+                <a href="adventures.html">&lt;&lt; Click here to learn more &gt;&gt;</a>
+            </p>
+        </div>
+          
+        <div class="infoSection">
+            <h2> Events </h2>            
+            <img src="images/Event1.jpg" alt="Mountain Spoke Bike Events | Biking Enthusiasts" >        
+            <p>
+                Are you a world class bike enthusiast?  Maybe you just like to enjoy the outdoors with other people.  Whatever your skill level might be, come joint us for any of our events.  We have events that are for any skill level.<br><br>
+                <a href="events.html">&lt;&lt; Click here to see upcoming events &gt;&gt;</a>
+            </p>
+        </div>
+          
+        <div class="infoSection">
+            <h2> SALES </h2>            
+            <img src="images/Bike1.jpg" alt="Mountain Spoke Sales for You | Bike Sales" >        
+            <p>
+                Ready to change out your bike?  Come see our great sales event we are having this month!!<br><br>
+                <a href="sales.html">&lt;&lt; Click here start shopping &gt;&gt;</a>
+            </p>
+        </div>
+          
+        <div class="infoSection">
+            <h2> Parts and Services </h2>            
+            <img src="images/Services1.jpg" alt="Mountain Spoke Parts & Services | Bike Garage" >        
+            <p>
+                Ready to go back out, but your bike needs some love. We understand, a hard core bike rider like yourself sometimes pushes their bike to the limits.  Come by and we can help you get your bike back to what you need it to be.<br><br>
+                <a href="services.html">&lt;&lt; Click here to get what you need &gt;&gt;</a>
+            </p>
+        </div>
+          
+        <div class="infoSection">
+            <h2> Contact Us </h2>            
+            <img src="images/Contact1.jpg" alt="Mountain Spoke Bike Adventures | Mountain Spoke Support" >        
+            <p>
+                Do you have a question that you need answered? We are always happy to help<br><br>
+                <a href="contact">&lt;&lt; Click here to contact us &gt;&gt;</a>
+            </p>
+        </div>
+      </div>
+  </main>
+    
+  <footer id="myFooter"></footer>
+  
+  <script>$("#myFooter").load("modules/footer.html");</script>
+  <script>$("#myHead").load("modules/head.html");</script>
+  <script>$("#myHeader").load("modules/header.html");</script>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/wayfinding.js"></script>
+  
+</body>
+</html>

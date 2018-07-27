@@ -1,0 +1,30 @@
+@media only screen and (min-width: 64em) {
+  
+ 
+.mainArea {
+grid-template-columns: 1fr 1fr 1fr;
+}
+    
+.topArea img {
+    height: 350px;
+    padding-right: 130px;
+    padding-left: 130px;    
+}
+
+.mainAdventure img{
+    height: 350px;    
+    padding-right: 280px;
+    padding-left: 280px;    
+}
+
+.eventArea .eventImg{
+    height: 275px;
+}
+    
+video {
+  /* Make video to at least 100% wide and tall */
+  max-width: 50%; 
+  max-height: 50%; 
+}
+
+}

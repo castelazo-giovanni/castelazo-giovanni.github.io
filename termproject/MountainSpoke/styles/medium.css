@@ -1,0 +1,79 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+header button { display: none; }
+    
+nav button { 
+    display: none; 
+}  
+/* hamburger button does not need to be shown in the medium on up views */
+    
+.logoImage{
+    float: left;
+    margin: 5px 15px 15px 5px;
+    left:auto;
+        
+}
+    
+.headerBackground{
+    background:#6B7A8F;
+    height: 260px;   
+    display:flex;   
+}  
+    
+.headerBackground h1 {
+    font-size: 2em;
+    text-align: center;    
+    display: inline;
+    /*flex-flow: none;
+    align-items: none;*/
+    max-height: 75%;
+    max-width: 40%;
+}
+
+    
+/* Navigation */
+nav ul.navigation {
+  display:flex;
+}
+
+nav ul {
+    flex-flow: row;    
+}
+
+nav li {
+    border: none;
+    border-right: 1px solid #352e26;
+    border-left: 1px solid #352e26;
+}
+
+.mainArea {
+grid-template-columns: 1fr 1fr;
+}
+    
+.topArea{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 10px;
+    text-align: center;
+    padding-top: 20px;
+ }  
+    
+.topArea img {
+    display:flex;
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+}
+    
+.eventArea .eventImg{
+    height: 180px;
+}
+
+video {
+  /* Make video to at least 100% wide and tall */
+  max-width: 75%; 
+  max-height: 75%; 
+}
+    
+}
